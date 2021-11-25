@@ -1,0 +1,101 @@
+body {
+    font-family: 'GTF Good Sans TRIAL', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+/*columns*/
+.page-wrapper {
+    margin: 0;
+    text-align: left;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+/*nav*/
+nav {
+    height: 90px;
+    position: relative;
+}
+nav .logo {
+    padding-left: 140px;
+    padding-top: 17px;
+    display: inline-block;
+    float: left;
+}
+nav ul {
+    margin: 0;
+    list-style: none;
+    padding-right: 140px;
+}
+nav li {
+    float: right;
+    display: inline-block;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+/*left column*/
+.left-column {
+    height: 100vh;
+    background: #FCB516;
+}
+.left-column .logo {
+    padding-left: 140px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.left-column p {
+    padding-left: 140px;
+    padding-bottom: 80px;
+    padding-right: 20px;
+    font-size: 26px;
+}
+.left-column .button1 {
+    margin-left: 140px;    
+}
+.button1 {
+    display: inline-block;
+    padding: 15px 20px;
+    border: 3px solid #000;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #000000;
+}
+.button1:hover {
+    color: #000000;
+    background: #FCB516;
+}
+#social-icons {
+    padding-left: 140px;
+    padding-top: 210px;
+}
+#social-icons img {
+    width: 25px;
+    height: 25px;
+}
+#social-icons a {
+    text-align: left;
+    width: 7%;
+    display: inline-block;
+}
+/*right column*/
+.right-column {
+    background-repeat:  no-repeat;
+    height: 100vh;
+}

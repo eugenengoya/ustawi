@@ -1,0 +1,185 @@
+body {
+    font-family: 'GTF Good Sans TRIAL', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;   
+}
+/*nav*/
+nav {
+    height: 100px;
+    position: relative;
+}
+nav .logo {
+    padding-left: 140px;
+    padding-top: 27px;
+    display: inline-block;
+    float: left;
+}
+nav ul {
+    margin: 0;
+    list-style: none;
+    padding-right: 140px;
+}
+nav li {
+    float: right;
+    display: inline-block;
+    padding-left: 100px;
+    padding-top: 35px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+/*title*/
+.titl h1 {
+    margin-left: 140px;
+    padding-top: 30px;
+    font-size: 64px;
+}
+.titl p {
+    margin-left: 140px;
+    margin-right: 140px;
+    padding-bottom: 50px;
+}
+  /********footer****************/
+ .footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 1rem;
+    background-color: dimgrey;
+    height: 100px;
+    color: black;
+}
+.footer p {
+    padding-left: 140px;
+}
+#social-icons {
+    margin: 0;
+    padding-left: 140px;
+    bottom: 0;
+    text-align: left;
+}
+#social-icons img {
+    width: 25px;
+    height: 25px;
+}
+#social-icons a {
+    text-align: left;
+    width: 6%;
+    display: inline-block;
+}
+.buttn {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 3px solid #000;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+}
+.buttn:hover {
+    color: #000;
+    background: #fff;
+}
+.btns .bt{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 3px solid #000;
+    border-radius: 4px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+}
+
+.btns .bt:hover {
+    color: #000;
+    background: #fff;
+}
+
+
+/*checkout*/
+/***********checkout****/
+ 
+
+
+.wrapper {
+    margin-top: 5%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.container {
+    width: 65%;
+    padding: 5% 10%;
+}
+
+h1 {
+    align-self: center;
+}
+
+form {
+    width: 100%;
+
+    >* {
+        margin-top: 20px;
+    }
+
+    input {
+        width: 100%;
+        min-height: 25px;
+        border: 0;
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        font-family: "Arimo";
+        margin-top: 5px;
+        color: $maroon;
+        border-radius: 4px;
+    }
+
+    label {
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: $maroon;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 10px;
+        color: $title;
+        letter-spacing: 1px;
+    }
+
+    h1:nth-of-type(2) {
+        margin-top: 10%;
+    }
+}
+
+.name {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+
+    div {
+        width: 45%;
+    }
+}
+
+.address-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 30%;
+    }
+}
+

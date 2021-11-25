@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ustawi | Blog</title>
+        <link rel="stylesheet" href="css/shop.css">
+        <style>
+            img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid @gray-light;
+  //border-radius: 1rem;
+  color: @gray-dark;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+ 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+  @media(min-width: 40rem) {
+    width: 50%;
+  }
+  @media(min-width: 56rem) {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  &:hover {
+    .card__image {
+      filter: contrast(100%);
+    }
+  }
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  //filter: saturate(180%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+  &::before {
+    content: "";
+      display: block;
+    padding-top: 56.25%; // 16:9 aspect ratio
+  }
+  @media(min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%; // 3:2 aspect ratio
+    }
+  }
+}
+
+.card__image--flowers {
+  background-image: url('https://unsplash.it/800/600?image=82');
+}
+
+.card__image--river {
+  background-image: url('https://unsplash.it/800/600?image=11');
+}
+
+.card__image--record {
+  background-image: url('https://unsplash.it/800/600?image=39');
+}
+
+.card__image--fence {
+  background-image: url();
+}
+
+.card__title {
+  color: @gray-dark;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+   </style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html"><img class="logo" src="img/uleaf.png" width="50px" height="50px"></a>
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="shop.php">SHOP</a></li>
+            </ul>
+        </nav>
+        <div class='page-wrapper'>
+            <div class='row'>
+                <div class='triple-column'>
+                    <div class='main-column'>
+                        <h1>Cool Articles</h1>
+                        <p>We will address your nutritional imbalances and restoring your body. This means you will get real RESULTS... starting on the very first day! We will delve into the underlying causes of unbalanced gut health starting with foundational areas to create a WHOLE vibrant you.</p>
+                    </div>
+                </div>
+            </div>
+
+
+<ul class="cards">
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image" style="background: url('img/background/wellness.jpg')">
+      <div class="card__content">
+        <div class="card__title">THE LOWDOWN ON IF YOU REALLY SHOULD EAT ORGANIC</div>
+        <p class="card__text"></p>
+        <button class="btn btn--block card__btn">Read more</button>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image card__image--river" style="background: url('img/background/wellness.jpg')"></div>
+      <div class="card__content">
+        <div class="card__title">CANNED, FRESH, OR FROZEN VEGGIES – WHICH IS BEST?</div>
+        <p class="card__text"></p>
+        <button class="btn btn--block card__btn">Read more</button>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image card__image--record" style="background: url('img/background/wellness.jpg')"></div>
+      <div class="card__content">
+        <div class="card__title">7 WAYS TO BOOST ENERGY WITHOUT CAFFEINE</div>
+        <p class="card__text"></p>
+        <button class="btn btn--block card__btn">Read more</button>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image card__image--flowers" style="background: url('img/background/wellness.jpg')"></div>
+      <div class="card__content">
+        <div class="card__title">EASY WAYS TO IMPROVE GUT HEALTH</div>
+        <p class="card__text"></p>
+        <button class="btn btn--block card__btn">Read more</button>
+      </div>
+    </div>
+  </li>
+</ul>
+<div class="footer">
+            <div id="social-icons">
+                <a href="http://www.facebook.com" target="_blank"><img src="img/facebook.svg" alt="facebook-icon" id="truck"></a>
+                <a href="http://www.instagram.com" target="_blank"><img src="img/instagram.svg" alt="instagram-icon" id="ship"></a>
+                <a href="http://www.twitter.com" target="_blank"><img src="img/twitter.svg" alt="twitter-icon" id="rail"></a>
+            </div>
+            <p>© Copyright 2019 Ustawi. All rights reserved.</p>
+        </div>
+    </body>
+</html>
